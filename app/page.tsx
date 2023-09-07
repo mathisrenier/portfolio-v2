@@ -24,7 +24,7 @@ export default function Home() {
                 <Link href={item.href} className="hover:underline">
                   {item.name}
                 </Link>
-                {index < array.length - 1 && <span>,&nbsp;</span>}
+                {index < array.length - 1 && <span>,&nbsp;&nbsp;</span>}
               </li>
             ))}
           </ul>
@@ -33,13 +33,21 @@ export default function Home() {
 
       <main>
         <section className="pt-14">
-          {/* <h1 className="leading-[0.8]" style={{fontSize: 'clamp(32px,13vw,90px)'}}>mathis leo renier</h1> */}
           <h1
+            className="leading-[0.8]"
+            style={{ fontSize: "clamp(32px,200px,20vw)" }}
+          >
+            mathis leo
+            <br />
+            renier
+            <span className="text-lg align-super pl-2">(/mæti:s/)</span>
+          </h1>
+          {/* <h1
             className="leading-[0.8]"
             style={{ fontSize: "clamp(32px,400px,28vw)" }}
           >
             mathis
-          </h1>
+          </h1> */}
         </section>
       </main>
     </>
