@@ -1,31 +1,11 @@
 import { validateHeaderValue } from "http";
 import Image from "next/image";
 import Link from "next/link";
-import { navBar, index } from "@/content";
+import { index } from "@/content";
 
 export default function Home() {
   return (
     <>
-      <header>
-        <div className="h-5 flex items-end">
-          <Link href={navBar.logo.href} className="text-xs">
-            {navBar.logo.name}
-          </Link>
-        </div>
-        <nav className="absolute inset-0 mt-4 flex items-end justify-center w-1/2 mx-auto h-5">
-          <ul className="flex flex-row text-xs ">
-            {navBar.navItems.map((item, index, array) => (
-              <li key={index}>
-                <Link href={item.href} className="hover:underline">
-                  {item.name}
-                </Link>
-                {index < array.length - 1 && <span>,&nbsp;&nbsp;</span>}
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
-
       <main>
         <section className="pt-14">
           <h1
@@ -91,10 +71,10 @@ export default function Home() {
               <div className="col-span-6" key={index}>
                 <Link className="block aspect-square bg-black" href={`/showcases/${value.key}`}>
                   <Image
-                    src="https://images.unsplash.com/photo-1694501898553-5e8ee216012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80"
+                    src={value.coverImage || "https://source.unsplash.com/800x800/?marmot"}
                     width={800}
                     height={800}
-                    alt="Picture of the author"
+                    alt={`Picture of the ${value.name} project`}
                     className="aspect-square bg-cover hover:opacity-80"
                   />
                 </Link>

@@ -1,11 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Link from "next/link";
+import { navBar } from "@/content";
 
 const soehneHalbfett = localFont({
   src: "./test-soehne-halbfett.woff2",
   display: "swap",
-  variable: '--font-soehne-halbfett'
+  variable: "--font-soehne-halbfett",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${soehneHalbfett.variable} px-3 py-4 bg-white font-sans`}>{children}</body>
+      <body
+        className={`${soehneHalbfett.variable} px-3 py-4 bg-white font-sans`}
+      >
+        <header>
+          <div className="h-5 flex items-end">
+            <Link href={navBar.logo.href} className="text-xs">
+              {navBar.logo.name}
+            </Link>
+          </div>
+          <nav className="absolute inset-0 mt-4 flex items-end justify-center w-1/2 mx-auto h-5">
+            <ul className="flex flex-row text-xs ">
+              {navBar.navItems.map((item, index, array) => (
+                <li key={index}>
+                  <Link href={item.href} className="hover:underline">
+                    {item.name}
+                  </Link>
+                  {index < array.length - 1 && <span>,&nbsp;&nbsp;</span>}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
