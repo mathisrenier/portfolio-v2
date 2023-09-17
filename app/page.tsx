@@ -1,4 +1,3 @@
-import { validateHeaderValue } from "http";
 import Image from "next/image";
 import Link from "next/link";
 import { index } from "@/content";
@@ -69,9 +68,15 @@ export default function Home() {
           <div className="mt-4 grid grid-cols-12 gap-x-4 gap-y-9">
             {index.showcase.projects.map((value, index) => (
               <div className="col-span-6" key={index}>
-                <Link className="block aspect-square bg-black" href={`/showcases/${value.key}`}>
+                <Link
+                  className="block aspect-square bg-black"
+                  href={`/showcases/${value.key}`}
+                >
                   <Image
-                    src={value.coverImage || "https://source.unsplash.com/800x800/?marmot"}
+                    src={
+                      value.coverImage ||
+                      "https://source.unsplash.com/800x800/?marmot"
+                    }
                     width={800}
                     height={800}
                     alt={`Picture of the ${value.name} project`}

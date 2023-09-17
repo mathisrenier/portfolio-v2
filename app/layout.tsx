@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
-import { navBar } from "@/content";
+import { navBar, footer } from "@/content";
 
 const soehneHalbfett = localFont({
   src: "./test-soehne-halbfett.woff2",
@@ -27,7 +27,7 @@ export default function RootLayout({
       >
         <header>
           <div className="h-5 flex items-end">
-            <Link href={navBar.logo.href} className="text-xs">
+            <Link href={navBar.logo.href} className="text-xs lg:text-sm">
               {navBar.logo.name}
             </Link>
           </div>
@@ -45,6 +45,34 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+
+        <footer>
+          <div className="mt-14 text-xs lg:text-sm grid grid-cols-12 justify-stretch items-start gap-x-6 gap-y-1">
+            <div className="col-span-6 lg:col-span-8">
+              <p className="text-end">contact</p>
+            </div>
+            <div className="col-span-6 lg:col-span-4">
+              {footer.contacts.map((value, index) => (
+                <a
+                  className="block hover:underline"
+                  href={value.href}
+                  key={index}
+                >
+                  {value.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-4 text-xs lg:text-sm grid grid-cols-12 justify-stretch items-start gap-x-6 gap-y-1">
+            <div className="col-span-6">
+              <p className="text-end">{footer.copyright.left}</p>
+            </div>
+            <div className="col-span-6">
+              <p>{footer.copyright.right}</p>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
