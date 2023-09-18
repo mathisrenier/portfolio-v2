@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-20">
+        <section className="mt-20 md:mt-24">
           <h3 className="text-xs lg:text-sm">
             {index.showcase.heading}
             <span className="pl-1 align-super text-[0.60rem]">{`(${index.showcase.projects.length})`}</span>
@@ -67,7 +67,7 @@ export default function Home() {
 
           <div className="mt-4 grid grid-cols-12 gap-x-4 gap-y-9">
             {index.showcase.projects.map((value, index) => (
-              <div className="col-span-6" key={index}>
+              <div className="col-span-6 lg:col-span-4" key={index}>
                 <Link
                   className="block aspect-square bg-black"
                   href={`/showcases/${value.key}`}

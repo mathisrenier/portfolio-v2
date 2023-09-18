@@ -47,7 +47,7 @@ export default function RootLayout({
         {children}
 
         <footer>
-          <div className="mt-14 text-xs lg:text-sm grid grid-cols-12 justify-stretch items-start gap-x-6 gap-y-1">
+          <div className="mt-24 text-xs lg:text-sm grid grid-cols-12 justify-stretch items-start gap-x-6 gap-y-1">
             <div className="col-span-6 lg:col-span-8">
               <p className="text-end">contact</p>
             </div>
