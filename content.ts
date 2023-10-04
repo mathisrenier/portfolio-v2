@@ -2,8 +2,8 @@ export const navBar = {
   logo: { name: "mlr", href: "/" },
   navItems: [
     { name: "index", href: "/" },
-    { name: "about", href: "/" },
-    { name: "links", href: "/" },
+    { name: "about", href: "/about" },
+    { name: "links", href: "/links" },
   ],
 };
 
@@ -27,7 +27,10 @@ export const index = {
     ],
     thin: [
       { left: "location", right: "45.5019° N, 73.5674° W\nmontreal / canada" },
-      { left: "work", right: "algo portfolio analytics at morgan stanley" },
+      {
+        left: "working on",
+        right: "algo portfolio analytics at morgan stanley",
+      },
     ],
   },
   showcase: {
@@ -38,7 +41,7 @@ export const index = {
         date: "/ 2023",
         key: "serene-keys",
         coverImage: "https://source.unsplash.com/800x800/?piano",
-        images: ['', '', '', ''],
+        images: ["", "", "", ""],
         details: [
           { left: "name", right: "serene keys" },
           { left: "type", right: "web app" },
@@ -91,4 +94,44 @@ export const index = {
       },
     ],
   },
+};
+
+export const about = {
+  title: "about me",
+  image: "https://source.unsplash.com/800x800/?portrait",
+  descriptions: [
+    {
+      left: "hi there",
+      right: "my name is mathis. \n\n",
+    },
+    {
+      left: "education",
+      right: "my name is Mathis. I'm a developer. hahhahahhahahaha",
+    },
+  ],
+};
+
+export const links = {
+  title: "links",
+  subtitle: "some things i like for your bookmarks",
+  categories: [
+    {
+      name: "podcasts",
+      list: [
+        {name: "My first million", href: "/"},
+        {name: "All in", href: "/"},
+        {name: "How I built this", href: "/"},
+
+      ],
+    },
+    {
+      name: "podcasts",
+      list: [
+        {name: "My first million", href: "/"},
+        {name: "All in", href: "/"},
+        {name: "How I built this", href: "/"},
+
+      ],
+    },
+  ],
 };

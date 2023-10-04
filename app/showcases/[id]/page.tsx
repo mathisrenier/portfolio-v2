@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { index } from "@/content";
 
-export default function Page({ params }: { params: { id: string } }) {
+export default function Showcase({ params }: { params: { id: string } }) {
   const project =
     index.showcase.projects.find((x) => x.key === params.id) || null;
 
