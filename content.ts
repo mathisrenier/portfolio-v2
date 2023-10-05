@@ -102,11 +102,15 @@ export const about = {
   descriptions: [
     {
       left: "hi there",
-      right: "my name is mathis. \n\n",
+      right: "I'm Mathis. On top of my job, I'm working on finishing side projects, climbing a v6, and becoming a better pianist. Don't hesitate to reach out!  \n\n",
+    },
+    {
+      left: "work",
+      right: "I started working at Morgan Stanley after graduating in 2022. I took part in the analyst training program in New York City, then joined the algorithmic trading division. \n\n",
     },
     {
       left: "education",
-      right: "my name is Mathis. I'm a developer. hahhahahhahahaha",
+      right: "I studied at McGill University in Montreal, majoring in computer science and minoring in economics. I developed a kin interest in machine learning during my degree and took as many related graduate courses as I could.",
     },
   ],
 };
@@ -118,18 +122,24 @@ export const links = {
     {
       name: "podcasts",
       list: [
-        {name: "My first million", href: "/"},
-        {name: "All in", href: "/"},
-        {name: "How I built this", href: "/"},
+        {name: "My First Million", href: "https://open.spotify.com/show/3mliji9352UAk3XnWElnDV"},
+        {name: "Acquired", href: "https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp"},
+        {name: "Sharp Tech with Ben Thompson", href: "https://open.spotify.com/show/4vk2MfVMEAuOnTWUOz6lnE"},
+        {name: "Astral Codex Ten Podcast", href: "https://open.spotify.com/show/5FEwz047DHuxiJnhq3Qjkg"},
+        {name: "All-In", href: "https://open.spotify.com/show/2IqXAVFR4e0Bmyjsdc8QzF"},
+        {name: "The Bayesian Conspiracy", href: "https://open.spotify.com/show/012ewyJUV46EXjY2RSsgXG"},
+        {name: "Indie Hackers", href: "https://open.spotify.com/show/4ex8hmrHCPvPohKJb3wsuC"},
+        {name: "Risk of Ruin", href: "https://open.spotify.com/show/1ETt1dCpYajVhDSFNAiQlP"},
 
       ],
     },
     {
-      name: "podcasts",
+      name: "blogs / newsletters",
       list: [
-        {name: "My first million", href: "/"},
-        {name: "All in", href: "/"},
-        {name: "How I built this", href: "/"},
+        {name: "Astral Codex Ten", href: "https://www.astralcodexten.com/"},
+        {name: "Money Stuff by Matt Levine", href: "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine"},
+        {name: "Bits about Money", href: "https://www.bitsaboutmoney.com/"},
+        {name: "Gwern's blog", href: "https://gwern.net/"},
 
       ],
     },
