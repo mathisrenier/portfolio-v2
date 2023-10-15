@@ -15,7 +15,7 @@ export default function About({ params }: { params: { id: string } }) {
 
       <div className="grid grid-cols-12 justify-stretch items-start gap-x-6">
         <section className="col-span-12 md:col-span-6 order-last md:order-first">
-          <div className="mt-14 flex flex-col justify-between gap-4">
+          <div className="mt-14 flex flex-col justify-between gap-4 ">
             <Image
               src={
                 about.image || "https://source.unsplash.com/800x800/?portrait"
