@@ -221,10 +221,7 @@ export const links = {
     {
       name: "podcasts",
       list: [
-        {
-          name: "My First Million",
-          href: "https://open.spotify.com/show/3mliji9352UAk3XnWElnDV",
-        },
+        
         {
           name: "Acquired",
           href: "https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp",
@@ -244,6 +241,10 @@ export const links = {
         {
           name: "The Bayesian Conspiracy",
           href: "https://open.spotify.com/show/012ewyJUV46EXjY2RSsgXG",
+        },
+        {
+          name: "My First Million",
+          href: "https://open.spotify.com/show/3mliji9352UAk3XnWElnDV",
         },
         {
           name: "Indie Hackers",
