@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${soehneHalbfett.variable} px-3 py-4 bg-white font-sans selection:bg-black selection:text-white`}
+        className={`${soehneHalbfett.variable} px-3 py-4 mx-auto bg-white font-sans selection:bg-black selection:text-white max-w-screen-2xl`}
       >
         <header>
           <div className="h-5 flex items-end">
