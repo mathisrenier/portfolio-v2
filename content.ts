@@ -84,7 +84,7 @@ export const index = {
         details: [
           { left: "name", right: "apr avocats online portal" },
           { left: "type", right: "web app" },
-          { left: "year", right: "2023\n\n" },
+          { left: "year", right: "2022\n\n" },
           {
             left: "tech stack",
             right:
@@ -296,6 +296,7 @@ export const links = {
         { name: "Product Hunt", href: "https://www.producthunt.com/" },
         { name: "Hacker News", href: "https://news.ycombinator.com/" },
         { name: "Indie Hackers", href: "https://www.indiehackers.com/" },
+        { name: "Essays - Paul Graham", href: "https://paulgraham.com/articles.html"},
         {
           name: "Metaculus",
           href: "https://www.metaculus.com/questions/?main-feed=true&status=open&has_group=false&type=forecast",
