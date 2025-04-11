@@ -13,7 +13,7 @@ export const footer = {
     { name: "linkedin", href: "https://www.linkedin.com/in/mathisrenier/" },
     { name: "github", href: "https://github.com/mathisrenier/" },
   ],
-  copyright: { left: "mathis leo renier", right: "©2023 all rights reserved" },
+  copyright: { left: "mathis leo renier", right: "©2025 all rights reserved" },
 };
 
 export const index = {
@@ -30,7 +30,7 @@ export const index = {
       { left: "location", right: "45.5019° N, 73.5674° W\nmontreal / canada" },
       {
         left: "working on",
-        right: "algo portfolio analytics at morgan stanley",
+        right: "algorithmic portfolio analytics at morgan stanley",
       },
     ],
   },
@@ -199,12 +199,12 @@ export const about = {
     {
       left: "hi there",
       right:
-        "I'm Mathis. On top of my job, I'm working on finishing side projects, climbing a v6, and becoming a better pianist. Don't hesitate to reach out!  \n\n",
+        "I'm Mathis. On top of my job, I'm working on finishing side projects, rock climbing projects, and becoming a better pianist. Don't hesitate to reach out!  \n\n",
     },
     {
       left: "work",
       right:
-        "I started working for Morgan Stanley after graduating in 2022. I took part in the analyst training program in New York City, then joined the algorithmic trading division. \n\n",
+        "I started working for Morgan Stanley after graduating in 2022. I took part in the analyst training program in New York City, then joined the algorithmic trading division in Montreal. \n\n",
     },
     {
       left: "education",
